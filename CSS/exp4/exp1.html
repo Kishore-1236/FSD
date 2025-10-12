@@ -3,63 +3,53 @@
 <head>
   <title>CSS Selectors Example</title>
   <style>
-    /* ---------------------------
-       i. SIMPLE SELECTORS
-    --------------------------- */
-    /* element selector */
+
     h1 {
       color: darkblue;
     }
 
-    /* id selector */
+
     #special {
       color: red;
       font-weight: bold;
     }
 
-    /* class selector */
+
     .highlight {
       background-color: yellow;
     }
 
-    /* group selector */
+
     h2, p {
       font-family: Arial, sans-serif;
     }
 
-    /* universal selector */
+
     * {
       margin: 5px;
     }
 
-    /* ---------------------------
-       ii. COMBINATOR SELECTORS
-    --------------------------- */
-    /* descendant selector */
     div p {
       color: green;
     }
 
-    /* child selector */
+
     div > span {
       color: purple;
       font-weight: bold;
     }
 
-    /* adjacent sibling selector */
+
     h2 + p {
       color: brown;
       font-style: italic;
     }
 
-    /* general sibling selector */
+
     h2 ~ ul {
       color: teal;
     }
 
-    /* ---------------------------
-       iii. PSEUDO-CLASS SELECTORS
-    --------------------------- */
     a:hover {
       color: orange;
     }
@@ -72,9 +62,6 @@
       background-color: lightgray;
     }
 
-    /* ---------------------------
-       iv. PSEUDO-ELEMENT SELECTORS
-    --------------------------- */
     p::first-line {
       font-weight: bold;
       color: blue;
@@ -85,9 +72,6 @@
       color: red;
     }
 
-    /* ---------------------------
-       v. ATTRIBUTE SELECTORS
-    --------------------------- */
     input[type="text"] {
       border: 2px solid green;
     }
