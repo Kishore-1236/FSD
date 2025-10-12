@@ -1,78 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>Working of Tables</title>
+  <title>HTML Lists Example</title>
 </head>
 <body>
-  <h2>III IT B.Tech Timetable</h2>
-  <table border="2" cellpadding="10" cellspacing="0">
-    <tr>
-      <th>Day / Period</th>
-      <th>09:00 - 10:00</th>
-      <th>10:00 - 11:00</th>
-      <th>11:00 - 11:10</th>
-      <th>11:10 - 12:10</th>
-      <th>12:10 - 01:10</th>
-      <th>01:10 - 02:10</th>
-      <th>02:10 - 03:10</th>
-      <th>03:10 - 04:30</th>
-    </tr>
-    <tr>
-      <td>Monday</td>
-      <td>AT&amp;CD</td>
-      <td>DWDM</td>
-      <td rowspan="6">Break</td>
-      <td>AOR</td>
-      <td>AJ</td>
-      <td rowspan="6">Lunch</td>
-      <td>AJ Lab (R&amp;D Project Lab)</td>
-      <td>AJ</td>
-    </tr>
-    <tr>
-      <td>Tuesday</td>
-      <td>CN</td>
-      <td>TPL</td>
-      <td>DWDM</td>
-      <td>AOR</td>
-      <td>AT&amp;CD</td>
-      <td>AJ</td>
-    </tr>
-    <tr>
-      <td>Wednesday</td>
-      <td>AJ</td>
-      <td>CN</td>
-      <td>TT</td>
-      <td>Sports</td>
-      <td colspan="4">CN Lab (R&amp;D Project Lab)</td>
-    </tr>
-    <tr>
-      <td>Thursday</td>
-      <td>Communication Skills</td>
-      <td>AOR</td>
-      <td>AT&amp;CD</td>
-      <td>AJ</td>
-      <td>CN</td>
-      <td>MATHS</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Friday</td>
-      <td>DWDM</td>
-      <td>CN</td>
-      <td colspan="2">UI Lab (R&amp;D Project Lab)</td>
-      <td colspan="2">Aptitude</td>
-   <td></td>
-    </tr>
-    <tr>
-      <td>Saturday</td>
-      <td>AOR</td>
-      <td>FST</td>
-      <td colspan="2">FSD 1 Lab (IT Computer Lab)</td>
-      <td>DWDM</td>
-      <td>AT&amp;CD</td>
-      <td></td>
-    </tr>
-  </table>
+  <h2>1. Ordered List</h2>
+  <ol>
+    <li>Install tools</li>
+    <li>Write code</li>
+    <li>Test the program</li>
+    <li>Deploy application</li>
+  </ol>
+  <h2>2. Unordered List</h2>
+  <ul>
+    <li>Milk</li>
+    <li>Bread</li>
+    <li>Eggs</li>
+    <li>Vegetables</li>
+  </ul>
+  <h2>3. Nested Lists</h2>
+  <ol>
+    <li>Chapter 1
+      <ul>
+        <li>Section 1.1</li>
+        <li>Section 1.2
+          <ol>
+            <li>Subsection 1.2.1</li>
+            <li>Subsection 1.2.2</li>
+          </ol>
+        </li>
+      </ul>
+    </li>
+    <li>Chapter 2
+      <ul>
+        <li>Section 2.1</li>
+        <li>Section 2.2</li>
+      </ul>
+    </li>
+  </ol>
+  <h2>4. Ordered List inside an Unordered List</h2>
+  <ul>
+    <li>Prepare Ingredients
+      <ol>
+        <li>Wash vegetables</li>
+        <li>Chop onions</li>
+        <li>Measure spices</li>
+      </ol>
+    </li>
+    <li>Cooking Process
+      <ol>
+        <li>Heat oil</li>
+        <li>Sauté onions</li>
+        <li>Add spices and vegetables</li>
+      </ol>
+    </li>
+  </ul>
+  <h2>5. Definition List</h2>
+  <dl>
+    <dt>HTML</dt>
+    <dd>HyperText Markup Language used to create web pages.</dd>
+    <dt>CSS</dt>
+    <dd>Cascading Style Sheets used for styling web pages.</dd>
+    <dt>JavaScript</dt>
+    <dd>A programming language used to make web pages interactive.</dd>
+  </dl>
 </body>
 </html>
