@@ -1,27 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="UTF-8">
   <title>JavaScript Output Methods</title>
 </head>
 <body>
   <h1>JavaScript Output Methods</h1>
-  <button onclick="showOutputs()">Click to Show Outputs</button>
-  
-  <p id="demo"></p>
+
+  <button onclick="useAlert()">Use alert()</button>
+  <button onclick="useConsole()">Use console.log()</button>
+  <button onclick="useDocumentWrite()">Use document.write()</button>
+  <button onclick="useInnerHTML()">Use innerHTML</button>
+
+  <p id="outputArea">Output will appear here.</p>
 
   <script>
-    function showOutputs() {
-      // 1. Alert box
-      alert("This is an alert message!");
+    function useAlert() {
+      alert("This is an alert box!");
+    }
 
-      // 2. Writing to HTML element
-      document.getElementById("demo").innerHTML = "Output using innerHTML.";
+    function useConsole() {
+      console.log("This is shown in the browser console.");
+      alert("Check your browser console for output!");
+    }
 
-      // 3. Writing directly to the document
-      document.write("<br>Output using document.write()");
+    function useDocumentWrite() {
+      document.write("<h3>Output using document.write()</h3>");
+    }
 
-      // 4. Console output
-      console.log("Output shown in the console.");
+    function useInnerHTML() {
+      document.getElementById("outputArea").innerHTML = "Output using innerHTML method.";
     }
   </script>
 </body>
